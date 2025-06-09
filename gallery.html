@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Our Photo - Kanya Kelavani Mandal</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/">
+            <img src="images/download__2_-removebg-preview.png" alt="Brand logo">
+            <span class="brand-logo-name">Shree Kanya Kelavani Mandal</span>
+        </a>
+        <nav class="navbar">
+             <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <label for="check" class="closebtn">
+                <i class="fas fa-times"></i>
+            </label>
+            <ul class="navbar-lists" id="myTopnav">
+                <li><i class="fas fa-home"></i><a class="navbar-link home-link" href="index.html">Home</a></li>
+                <li><i class="fas fa-user"></i><a class="navbar-link about-link" href="aboutus.html">About Us</a></li>
+                <li><i class="fas fa-envelope"></i><a class="navbar-link contact-link" href="contactus.html">Contact Us</a></li>
+                <li><i class="fas fa-school"></i><a class="navbar-link service-link" href="department.html">Department</a></li>
+                <li><i class="fas fa-hotel"></i><a class="navbar-link contact-link" href="hostel.html">Hostel</a></li>
+                <li><i class="fas fa-image"></i><a class="navbar-link contact-link" href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header2 class="hero" role="banner">
+        <h1>Our Photo Gallery</h1>
+    </header2>
+</head>
+
+<body>
+
+    <main>
+        <div class="gallery-container">
+            <div class="gallery-item" onclick="openModal('event1')">
+                <img src="images/20250602_100801.jpg" alt="Inauguration Ceremony">
+                <div class="gallery-title">Inauguration Ceremony</div>
+            </div>
+            <div class="gallery-item" onclick="openModal('event2')">
+                <img src="images/20250602_100801.jpg" alt="Science Fair">
+                <div class="gallery-title">Science Fair</div>
+            </div>
+            <div class="gallery-item" onclick="openModal('event3')">
+                <img src="images/20250602_100841.jpg" alt="Cultural Extravaganza">
+                <div class="gallery-title">Cultural Extravaganza</div>
+            </div>
+            <div class="gallery-item" onclick="openModal('event4')">
+                <img src="images/20250602_100852.jpg" alt="Sports Day">
+                <div class="gallery-title">Sports Day</div>
+            </div>
+            <div class="gallery-item" onclick="openModal('event5')">
+                <img src="images/20250602_100718.jpg" alt="Art Exhibition">
+                <div class="gallery-title">Art Exhibition</div>
+            </div>
+            <div class="gallery-item" onclick="openModal('event6')">
+                <img src="images/20250602_100945.jpg" alt="Annual Day Celebration">
+                <div class="gallery-title">Annual Day Celebration</div>
+            </div>
+        </div>
+
+        <!-- Modal for displaying multiple images -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content" id="modalContent">
+                <!-- Images will be injected here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My School. All rights reserved.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

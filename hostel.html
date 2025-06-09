@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hostel - Shree Kanya Kelavani Mandal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hostel.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <a href="/">
+            <img src="images/download__2_-removebg-preview.png" alt="Brand logo" />
+            <span class="brand-logo-name">Shree Kanya Kelavani Mandal</span>
+        </a>
+        <nav class="navbar">
+            
+           <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <label for="check" class="closebtn">
+                <i class="fas fa-times"></i>
+            </label>
+
+            <ul class="navbar-lists" id="myTopnav">
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a class="navbar-link home-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <i class="fas fa-user"></i>
+                    <a class="navbar-link about-link" href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a class="navbar-link contact-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                    <i class="fas fa-school"></i>
+                    <a class="navbar-link service-link" href="department.html">Department</a>
+                </li>
+                <li>
+                    <i class="fas fa-hotel"></i>
+                    <a class="navbar-link hostel-link" href="hostel.html">Hostel</a>
+                </li>
+                <li>
+                    <i class="fas fa-image"></i>
+                    <a class="navbar-link gallery-link" href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <header2 class="hero">
+        <h1>Hostel Facilities</h1>
+    </header2>
+
+    <main class="container">
+        <section class="overview">
+            <h2>About Our Hostel</h2>
+            <p>
+                Kanya Kelavani Mandal offers safe, comfortable, and well-maintained hostel accommodation for our students. Our hostel provides a supportive environment conducive
+                to study, personal growth, and healthy living.
+            </p>
+        </section>
+
+        <section class="facilities">
+            <h2>Facilities</h2>
+            <ul class="facilities-list" aria-label="Hostel facilities list">
+                <li>Spacious well-ventilated rooms</li>
+                <li>24x7 security and CCTV surveillance</li>
+                <li>Clean and hygienic bathrooms</li>
+                <li>Mess with nutritious meals</li>
+                <li>Common recreation room</li>
+                <li>Study rooms with Wi-Fi access</li>
+                <li>Laundry services</li>
+            </ul>
+        </section>
+
+        <section class="amenities-section">
+            <h2>Amenities</h2>
+            <ul>
+                <li>24-hour water supply</li>
+                <li>Regular cleaning and maintenance</li>
+                <li>Power backup</li>
+                <li>Medical assistance</li>
+                <li>Quiet and peaceful study environment</li>
+            </ul>
+        </section>
+
+        <section class="hostel-gallery" aria-label="Hostel photo gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+
+            <div class="gallery-item" tabindex="0" onclick="openModal('images/20250602_100756.jpg')">
+            <img src="images/20250602_100756.jpg" alt="Image 1" />
+            </div>
+            <div class="gallery-item" tabindex="0" onclick="openModal('images/20250602_100847.jpg')">
+                <img src="images/20250602_100847.jpg" alt="Hostel study table" />
+            </div>
+            <div class="gallery-item" tabindex="0" onclick="openModal('images/20250602_100832.jpg')">
+                <img src="images/20250602_100832.jpg" alt="Hostel dining hall" />
+            </div>
+            <div class="gallery-item" tabindex="0" onclick="openModal('images/20250602_100841.jpg')">
+                <img src="images/20250602_100841.jpg" alt="Hostel common room" />
+            </div>
+            <div class="gallery-item" tabindex="0" onclick="openModal('images/20250602_100942.jpg')">
+                <img src="images/20250602_100942.jpg" alt="Hostel common room" />
+            </div>
+            <div class="gallery-item" tabindex="0" onclick="openModal('images/20250602_100945.jpg')">
+                <img src="images/20250602_100945.jpg" alt="Hostel common room" />
+            </div>
+            <div class="gallery-item" tabindex="0" onclick="openModal('images/20250602_100953.jpg')">
+                <img src="images/20250602_100953.jpg" alt="Hostel common room" />
+            </div>
+            <div class="gallery-item" tabindex="0" onclick="openModal('images/20250602_100852.jpg')">
+                <img src="images/20250602_100852.jpg" alt="Hostel common room" />
+            </div>
+            </div>
+
+            <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <img id="modalImage" src="" alt="Modal Image" />
+            </div>
+        </div>
+
+        </section>
+
+        <section class="contact-info-section">
+            <h2>Contact & Support</h2>
+            <p class="contact-info">
+                <strong>Phone:</strong> +91 12345 67890<br />
+                <strong>Email:</strong> hostel@kanyakelavanimandal.org<br />
+                <strong>Address:</strong> Kanya Kelavani Mandal, Unjha Campus Hostel<br />
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color: white;">&copy; 2024 My School. All rights reserved.</p>
+    </footer>
+
+    <script src="hostel.js"></script>
+</body>
+
+</html>
+
+
+ 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="contactus.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<title>Contact Us - Kanya Kelavani Mandal</title>
+</head>
+<body>
+  <header class="header">
+    <a href="/">
+        <img src="images/download__2_-removebg-preview.png" alt="Brand logo">
+        <span class="brand-logo-name">
+            Shree Kanya Kelavani Mandal
+        </span>
+    </a>
+    <nav class="navbar">
+      
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <label for="check" class="closebtn">
+                <i class="fas fa-times"></i>
+            </label>
+
+        <ul class="navbar-lists" id="myTopnav">
+            <li>
+                <i class="fas fa-home"></i>
+                <a class="navbar-link home-link" href="index.html">
+                    Home</a>
+            </li>
+            <li>
+                <i class="fas fa-user"></i>
+                <a class="navbar-link about-link" href="aboutus.html">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <i class="fas fa-envelope"></i>
+                <a class="navbar-link contact-link" href="contactus.html">
+                    Contact Us
+                </a>
+            </li>
+            <li>
+                <i class="fas fa-school"></i>
+                <a class="navbar-link service-link" href="department.html">
+                    Department
+                </a>
+            </li>
+            <li><i class="fas fa-hotel"></i>
+                <a class="navbar-link contact-link" href="hostel.html">
+                    Hostel
+                </a>
+            </li>
+            <li><i class="fas fa-image"></i>
+                <a class="navbar-link contact-link" href="gallery.html">
+                    Gallery
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<header2 class="hero" >
+  <h1>Contact Us</h1>
+</header2>
+
+    <div class="container">
+       <section id="contact-form">
+            <h2 class="contact-form-heading">
+                Contact Us Form
+            </h2>
+            <div class="container">
+                <form action="index.php" method="POST" id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">
+                            Full Name
+                        </label>
+                        <input type="text" id="fullName" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required>
+                          </textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-details" aria-label="Contact information">
+            <h2>Contact Details</h2>
+            <p class="contact-info-item"><strong>Phone:</strong> +91 9898246826</p>
+            <p class="contact-info-item"><strong>Email:</strong> kkmunjha1955@gmail.com</p>
+            <p class="contact-info-item"><strong>Address:</strong> Sardar Chowk, Station Road, Unjha,Mehsana - 387170</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kanya Kelavani Mandal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
